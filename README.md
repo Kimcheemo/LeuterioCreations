@@ -72,5 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-Packages used:
-- locomotive-scroll react-locomotive-scroll
+CODE EXPLANATIONS
+
+-WheelContainer-
+
+
+-ColorProvider-

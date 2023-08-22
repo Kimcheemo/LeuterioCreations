@@ -1,10 +1,14 @@
 import React from 'react';
 import '../App.css';
+import { useColors } from '../components/ColorProvider.tsx';
 
 const Contact = () => {
+
+  const { color1, color2 } = useColors();
+
   return(
     <div className="page">
-      <h1 className="page-title">CONTACT</h1>
+      <h1 className="page-title" style={{ color: color1 }}>CONTACT</h1>
     </div>
   )
 }
