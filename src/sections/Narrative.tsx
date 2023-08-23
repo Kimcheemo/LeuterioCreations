@@ -8,11 +8,11 @@ const Narrative = () => {
 
   return(
     <div className="page">
-      <div className='title-container'>
-        <h1 className="page-title" style={{ color: color1 }}>NARRATIVE OF ME</h1>
-        <h3>"Combining creativity and diligence</h3>
-        <h3>to forge extraordinary results."</h3>
-        <p>Explore further.</p>
+      <div className='title-container container'>
+        <h1 className="page-title flex justify-start" style={{ color: color1 }}>NARRATIVE OF ME</h1>
+        <h3 className='flex justify-end leading-6'>"Combining creativity and diligence</h3>
+        <h3 className='flex justify-end mb-5'>to forge extraordinary results."</h3>
+        <p className='flex justify-end mt-10'>Explore further.</p>
       </div>
     </div>
   )

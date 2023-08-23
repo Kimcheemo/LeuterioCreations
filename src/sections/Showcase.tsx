@@ -8,10 +8,12 @@ const Showcase = () => {
 
   return(
     <div className="page">
-      <p>"Unwavering dedication,</p>
-      <p>boundless creativity."</p>
-      <h1 className="page-title" style={{ color: color2 }}>SHOWCASE</h1>
-      <p>Discover more.</p>
+      <div className='container-sm'>
+        <h4 className='flex justify-start mb-0'>"Unwavering dedication,</h4>
+        <h4 className='flex justify-end mt-0'>boundless creativity."</h4>
+        <h1 className="page-title mb-12" style={{ color: color2 }}>SHOWCASE</h1>
+        <p className='flex justify-end mt-12'>Discover more.</p>
+      </div>
     </div>
   )
 }
