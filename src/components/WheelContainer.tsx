@@ -16,7 +16,7 @@ const WheelContainer: React.FC<WheelContainerProps> = ({ sections }) => {
   const scrollSensitivity = 0.0003;
 
   const handleWheel = (event: React.WheelEvent<HTMLDivElement>) => {
-    //event.preventDefault();
+    event.preventDefault();
 
     const scrollAmount = event.deltaY;
 
