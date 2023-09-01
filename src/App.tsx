@@ -18,7 +18,7 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path='/' element={<Layout />} />
-        {/*<Route path='/my-passion' element={<MyPassion />} />*/}
+        <Route path='/my-passion' element={<MyPassion />} />
       </Routes>
     </Router>
   );
