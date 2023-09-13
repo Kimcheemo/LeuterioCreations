@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import { useColors } from '../components/ColorProvider.tsx';
 
 const Contact = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import '../App.css';
 import { useColors } from '../components/ColorProvider.tsx';
 import { Link } from 'react-router-dom';
 
@@ -26,9 +25,9 @@ const Narrative = () => {
       <div className='title-container container'>
         <h1 className="page-title flex justify-start" style={{ color: color1 }}>NARRATIVE OF ME</h1>
         <div className='text-container'>
-          <h3 className={`flex justify-end leading-6 line line1 ${activeIndex === 0 ? 'active' : ''}`}>"Combining creativity and diligence</h3>
-          <h3 className={`flex justify-end mb-5 line line2 ${activeIndex === 1 ? 'active' : ''}`}>to forge extraordinary results."</h3>
-          <Link to='/my-passion' className={`p_link flex justify-end mt-10 line line3 ${activeIndex === 2 ? 'active' : ''}`}>Explore further.</Link>
+          <p className={`quote flex justify-end line line1 ${activeIndex === 0 ? 'active' : ''}`}>"Combining creativity and diligence</p>
+          <p className={`quote flex justify-end line line2 ${activeIndex === 1 ? 'active' : ''}`}>to forge extraordinary results."</p>
+          <Link to='/my-passion' className={`p_link flex justify-end line line3 ${activeIndex === 2 ? 'active' : ''}`}>Explore further.</Link>
         </div>
       </div>
     </div>

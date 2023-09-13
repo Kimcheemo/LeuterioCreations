@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import { useColors } from '../components/ColorProvider.tsx';
 import me from '../images/me.jpg';
 import Tab from 'react-bootstrap/Tab';

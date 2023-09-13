@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import '../App.css';
 
 const ColorContext = createContext(); // holds the current color value
 
