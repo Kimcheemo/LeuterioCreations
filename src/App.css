@@ -42,12 +42,11 @@ h5 {
   color: white;
 }
 
-/* p {
+p {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: -2px;
-} */
+  color: white;
+  font-size: 20px;
+}
 
 .p_link {
   font-family: 'Nunito Sans', sans-serif;
@@ -126,4 +125,22 @@ h5 {
 
 .nav-tabs .nav-link.active {
   border-bottom: solid 4px white !important;
+}
+
+.vertical {
+  display: flex;
+  writing-mode: vertical-lr; /* Vertical text orientation */
+}
+
+.vertical-letter {
+  font-size: 55px; /* Adjust font size as needed */
+  writing-mode: horizontal-tb;
+  text-align: center;
+}
+
+.vertical-line {
+  width: 10px; /* Adjust the width as needed */
+  height: 100vh; /* Make the line span the full height of the container */
+  background-color: white; /* Change the color as needed */
+  margin: 0 20px; /* Adjust the margin to control the space between the line and text */
 }
