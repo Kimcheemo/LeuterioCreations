@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useColors } from '../components/ColorProvider.tsx';
+import { Link } from 'react-router-dom';
 
 const Showcase = () => {
 
@@ -21,11 +22,11 @@ const Showcase = () => {
 
   return(
     <div className="page">
-      <div className='container-sm'>
-        <h4 className={`flex justify-start mb-0 line line1 ${activeIndex === 0 ? 'active' : ''}`}>"Unwavering dedication,</h4>
-        <h4 className={`flex justify-end mt-0 line line2 ${activeIndex === 1 ? 'active' : ''}`}>boundless creativity."</h4>
-        <h1 className="page-title mb-12" style={{ color: color2 }}>SHOWCASE</h1>
-        <p className={`flex justify-end line line3 ${activeIndex === 2 ? 'active' : ''}`} style={{marginTop: "65px", paddingLeft: "490px"}}>Discover more.</p>
+      <div>
+        <p className={`quote2 flex justify-start mb-0 line line1 ${activeIndex === 0 ? 'active' : ''}`}>"Unwavering dedication,</p>
+        <p className={`quote2 flex justify-end mt-0 line line2 ${activeIndex === 1 ? 'active' : ''}`}>boundless creativity."</p>
+        <h1 className="page-title mb-5" style={{ color: color2 }}>SHOWCASE</h1>
+        <Link to='/my-passion' className={`p_link2 flex justify-end line line3 ${activeIndex === 2 ? 'active' : ''}`}>Discover more.</Link>
       </div>
     </div>
   )

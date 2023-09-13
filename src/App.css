@@ -27,11 +27,12 @@ h2 {
   margin-bottom: 0px;
 }
 
-h4 {
+.quote2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 48px;
   letter-spacing: -5px;
+  line-height: 55px;
 }
 
 h5 {
@@ -55,7 +56,16 @@ h5 {
   letter-spacing: -2px;
   text-decoration: none;
   margin-top: 30px;
+}
 
+.p_link2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-decoration: none;
+  padding-left: 490px;
+  padding-top: 15px;
 }
 
 .page{
@@ -74,11 +84,6 @@ h5 {
 
 .title-container{
   display: block;
-}
-
-@media (min-width: 1024px)
-.title-container {
-    max-width: 1024px;
 }
 
 .page-title{
