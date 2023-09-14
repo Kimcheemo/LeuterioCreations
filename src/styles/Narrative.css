@@ -55,3 +55,9 @@
   background-color: white; /* Change the color as needed */
   margin: 0 30px; /* Adjust the margin to control the space between the line and text */
 }
+
+.arrow {
+  background-color: black;
+  cursor: pointer;
+  margin-top: 70px;
+}
