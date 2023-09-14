@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useColors } from '../components/ColorProvider.tsx';
 import me from '../images/me.jpg';
+import '../styles/Narrative.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Logo from '../components/Logo.tsx';
@@ -47,21 +48,29 @@ function Hobbies() {
 }
 
   return(
-    <div className='flex flex-start'>
-      <div>
+    <div className='flex mx-2'>
+
+      <div className='mx-5 my-24'>
         <img src={me} height={600}/>
       </div>
-      <div className="vertical-line"></div>
-      <div className='vertical'>
-      {activeTab.split('').map((letter, index) => (
-        <span key={index} className='vertical-letter'>
-          {letter === " " ? '\u00A0' : letter}
-        </span>
-      ))}
+
+
+        <div className="vertical-line"></div>
+        <div className='vertical my-auto'>
+        {activeTab.split('').map((letter, index) => (
+          <span key={index} className='vertical-letter'>
+            {letter === " " ? '\u00A0' : letter}
+          </span>
+        ))}
+        </div>
+        <div className="vertical-line"></div>
+
+
+      <div className='mx-3'>
+      <div className='float-right m-12'>
+        <Logo />
       </div>
-      <div className="vertical-line"></div>
-      <Logo />
-      <div className='container'>
+      <div className='float-left max-w-4xl mx-5 my-8'>
         <Tabs
           defaultActiveKey="MY PASSION"
           id="fill-tab-example"
@@ -75,13 +84,14 @@ function Hobbies() {
           <Tab eventKey="ABOUT ME" title="ABOUT ME" tabClassName='tab-title'>
             <About />
           </Tab>
-          <Tab eventKey="SKILLS" title="SKILLS" tabClassName='tab-title'>
+          <Tab eventKey="MY SKILLS" title="SKILLS" tabClassName='tab-title'>
             <Education />
           </Tab>
-          <Tab eventKey="HOBBIES" title="HOBBIES" tabClassName='tab-title'>
+          <Tab eventKey="MY HOBBIES" title="HOBBIES" tabClassName='tab-title'>
             <Hobbies />
           </Tab>
         </Tabs>
+      </div>
       </div>
     </div>
 
