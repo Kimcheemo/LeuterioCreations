@@ -3,6 +3,7 @@ import { useColors } from '../components/ColorProvider.tsx';
 import me from '../images/me.jpg';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Logo from '../components/Logo.tsx';
 
 const MyPassion = () => {
 
@@ -59,6 +60,7 @@ function Hobbies() {
       ))}
       </div>
       <div className="vertical-line"></div>
+      <Logo />
       <div className='container'>
         <Tabs
           defaultActiveKey="MY PASSION"

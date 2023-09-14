@@ -9,7 +9,7 @@ const Title = () => {
   return(
 
     <div className="page">
-      <div className="title-container">
+      <div className="logo-container">
         <h2 className='sub-title' style={{ color: color1 }}>Web Developer</h2>
         <h1 className="page-title" style={{ color: color2 }}>LEUTERIO CREATIONS</h1>
       </div>
